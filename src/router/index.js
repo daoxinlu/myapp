@@ -71,5 +71,6 @@ export default new Router({
     //   name:'Capt',
     //   component:Capt
     // }
-  ]
+  ],
+  mode:'history'
 })
