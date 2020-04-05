@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            
+            background-color:red  
+        }
+    </style>
+</head>
+<body>
+    <input id="ipn" type="text" placeholder="请输入" style="background-color: yellow;">
+    <input type="file">
+    <script>
+        var ipn = document.getElementById('ipn');
+        var input = document.getElementsByTagName('input')
+        ipn.addEventListener('change',(e)=>{
+            var e = e || window;
+            console.log(e.target.value.trim())
+        })
+        input[0].style.backgroundColor = "blue"
+        ipn.style.cssText+="width:100px;background-color:yellow"
+    </script>
+</body>
+</html>
